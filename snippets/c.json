@@ -1,0 +1,24 @@
+{
+  "CP: Main": {
+    "prefix": "cp-main",
+    "body": [
+      "#include <stdio.h>",
+      "",
+      "int main(void) {",
+      "    ${1:// Write solution here.}",
+      "    return 0;",
+      "}",
+      "$0"
+    ],
+    "description": "C11 program starter"
+  },
+  "CP: For Loop": {
+    "prefix": "cp-for",
+    "body": [
+      "for (int ${1:i} = 0; $1 < ${2:n}; ++$1) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Counted loop with linked index placeholders"
+  }
+}

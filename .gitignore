@@ -1,0 +1,21 @@
+/build/
+*.exe
+*.o
+*.obj
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local agent state and credentials
+/.remember/
+/.aws/
+/.codex/
+/.agents/
+.env
+.env.*
+!.env.example
+
+# Temporary experiments; retain the directory guide
+/scratch/*
+!/scratch/README.md

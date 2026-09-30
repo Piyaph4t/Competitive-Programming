@@ -1,0 +1,179 @@
+[
+  {
+    "old_path": "CSES/Introductory/Distinct_Number.c",
+    "new_path": "platforms/cses/sorting-and-searching/distinct-numbers.c",
+    "sha256": "4eebd3033dcd6a771916666ed88916cfc1ccb0d463947c6ef39f1ea3f9f0ccaf"
+  },
+  {
+    "old_path": "CSES/Introductory/Gray_Code",
+    "new_path": "build/platforms/cses/introductory/gray-code",
+    "sha256": "18bec8f353fef6afca19ab3fff8663ee95e790e55d54a4e8e8b7d6ca18b5e331"
+  },
+  {
+    "old_path": "CSES/Introductory/Gray_Code.cpp",
+    "new_path": "platforms/cses/introductory/gray-code.cpp",
+    "sha256": "5559a18005b8cb5fd2c446f5173ac10721faeb19e891efe3046715991e2e382d"
+  },
+  {
+    "old_path": "CSES/Introductory/Palindrome_Reorder",
+    "new_path": "build/platforms/cses/introductory/palindrome-reorder",
+    "sha256": "da73a69bb92de491274bc7586169e7e63e4285ed3c4ce28b5d549ada5dd6557e"
+  },
+  {
+    "old_path": "CSES/Introductory/Palindrome_Reorder.cpp",
+    "new_path": "platforms/cses/introductory/palindrome-reorder.cpp",
+    "sha256": "68027769dd1a565ae1e98f7d05178239049c7d49dec6d5c71fbd287b994c6953"
+  },
+  {
+    "old_path": "CSES/Introductory/Repetitions.c",
+    "new_path": "platforms/cses/introductory/repetitions.c",
+    "sha256": "d3021075587ab2db57ea6a3dd7373c37be59fb4fa0e23c78f5b48668edf13a2e"
+  },
+  {
+    "old_path": "CSES/Range Query/Static_Range_Sum_queries.c",
+    "new_path": "platforms/cses/range-queries/static-range-sum-queries.c",
+    "sha256": "8d5746c80312dc98a02a90462eb1c1573ef4b48588aa38feddcb689cc3015418"
+  },
+  {
+    "old_path": "CSES/Sorting and Searching/Apartments.c",
+    "new_path": "platforms/cses/sorting-and-searching/apartments.c",
+    "sha256": "e63026b75586996207888195195f6224a2bdf73df942d23a31d9d485564595eb"
+  },
+  {
+    "old_path": "CSES/Sorting and Searching/Firris_Wheel.c",
+    "new_path": "platforms/cses/sorting-and-searching/ferris-wheel.c",
+    "sha256": "1a9645756233701e76c4559132c758e0621844deb286f3957bc1dcae043efc86"
+  },
+  {
+    "old_path": "CSES/Sorting and Searching/Missing_Coin_Sum.c",
+    "new_path": "platforms/cses/sorting-and-searching/missing-coin-sum.c",
+    "sha256": "6804332d6d965cb6a3567467ea3e3abb8f873c47f7cd953798fcc27fe7194eb3"
+  },
+  {
+    "old_path": "CSES/Sorting and Searching/Movie_Festival.cpp",
+    "new_path": "platforms/cses/sorting-and-searching/movie-festival.cpp",
+    "sha256": "a604be33d44870d0dfcaa3d773c317ad59778215e0c3170fad586d53f9d12dc9"
+  },
+  {
+    "old_path": "CSES/Sorting and Searching/Stick_Lengths.c",
+    "new_path": "platforms/cses/sorting-and-searching/stick-lengths.c",
+    "sha256": "edb3a267da46fca70e135828fe3245f493fb2a5f3e708030493816a996674f64"
+  },
+  {
+    "old_path": "CSES/Sorting and Searching/Subarray_Sums_I.cpp",
+    "new_path": "platforms/cses/sorting-and-searching/subarray-sums-i.cpp",
+    "sha256": "49dc41d6fe03de422e753cec61ef3f5c541d12345ca69887c5ccadf15d23bae1"
+  },
+  {
+    "old_path": "CSES/Sorting and Searching/Sum_of_Three_Values.cpp",
+    "new_path": "platforms/cses/sorting-and-searching/sum-of-three-values.cpp",
+    "sha256": "ee997ad2cbf1eb2b7fd34f31daaeceb5346f4ae60e239b865325c4048c365865"
+  },
+  {
+    "old_path": "Codeforces/1690D",
+    "new_path": "build/platforms/codeforces/sliding-window/1690d-black-and-white-stripe",
+    "sha256": "89d891ab9ff58c53fd6e446c3587178f696c3c9077e25376e5ee2704c2d34dd0"
+  },
+  {
+    "old_path": "Codeforces/1690D.cpp",
+    "new_path": "platforms/codeforces/sliding-window/1690d-black-and-white-stripe.cpp",
+    "sha256": "3764c93dae5851287e980942b40728ed64e1404de883b0965ebffabd5eb57cd3"
+  },
+  {
+    "old_path": "Codeforces/263A.c",
+    "new_path": "platforms/codeforces/implementation/263a-beautiful-matrix.c",
+    "sha256": "c87f97008d952e0b7968d0d57a837a488761125d469638ac593e54db8c84b5f8"
+  },
+  {
+    "old_path": "Codeforces/266A.c",
+    "new_path": "platforms/codeforces/strings/266a-stones-on-the-table.c",
+    "sha256": "b5a02ebf29377042a4fd6e773ea68489e5ba1086ee588df830304b18b1c6eb1a"
+  },
+  {
+    "old_path": "Codeforces/339A.c",
+    "new_path": "platforms/codeforces/sorting/339a-helpful-maths.c",
+    "sha256": "de1406b4efffa1c5e77ffecac8e292288b849afb1c2873aa6bcdd57ba1f5c001"
+  },
+  {
+    "old_path": "Codeforces/381A.cpp",
+    "new_path": "platforms/codeforces/two-pointers/381a-sereja-and-dima.cpp",
+    "sha256": "566394a766114cb448e45949ac9362166537a05643fa0631c13c4bfb9cce2454"
+  },
+  {
+    "old_path": "Codeforces/706B",
+    "new_path": "build/platforms/codeforces/binary-search/706b-interesting-drink",
+    "sha256": "86abe80e5d8928492b0f873ede56efd40e45b9fbf0978575cda8d2e6446660ba"
+  },
+  {
+    "old_path": "Codeforces/706B.cpp",
+    "new_path": "platforms/codeforces/binary-search/706b-interesting-drink.cpp",
+    "sha256": "13527bff63d1b9b1d635bc5dbd38996e735c7d5b845c93bc60f9d169a5acbdb0"
+  },
+  {
+    "old_path": "Codeforces/978C.cpp",
+    "new_path": "platforms/codeforces/binary-search/978c-letters.cpp",
+    "sha256": "5f57158ed29bb90d25b1e581ac1a514758e1fe792f215c66ec88d9eda9626f3a"
+  },
+  {
+    "old_path": "TOI/toi5_nsw.c",
+    "new_path": "platforms/toi/toi05/toi05-nsw.c",
+    "sha256": "e75b75442ce28c1bc1ec9d6fcdafcad9e45b1e5cb88b68430224f26615269c33"
+  },
+  {
+    "old_path": "TOI/toi5_roi.c",
+    "new_path": "platforms/toi/toi05/toi05-roi.c",
+    "sha256": "7c1462fc42d03740c4a8ba6fbead2fe62d2ea41944fd0c8e950a9da2f259a686"
+  },
+  {
+    "old_path": "ท้ายค่าย 1/c1_su66_permutation.cpp",
+    "new_path": "training/camp-1/problems/c1-su66-permutation.cpp",
+    "sha256": "0dd87b0b1659044d9957ccacbe322a78ea3628a9ec823fa86c6afed06fdd32b8"
+  },
+  {
+    "old_path": "ท้ายค่าย 1/c1_su66_slowlyexpress.c",
+    "new_path": "training/camp-1/problems/c1-su66-slowlyexpress.c",
+    "sha256": "5f3b70b3483707c7c29599ec4bc27a25c096c23327f0d35d31f6dc3d57f23c4f"
+  },
+  {
+    "old_path": "ท้ายค่าย 1/c1_su67_maneuver.cpp",
+    "new_path": "training/camp-1/problems/c1-su67-maneuver.cpp",
+    "sha256": "af2fb048dc537ebb5cf47402f8b4cc401acf429420e34bbbe08958a3370856e4"
+  },
+  {
+    "old_path": "ท้ายค่าย 1/c1_su6_flood.cpp",
+    "new_path": "training/camp-1/problems/c1-su6-flood.cpp",
+    "sha256": "40e1bb31f6c60bb669884af8405948d58164766a0fbbe6fd4788fa0fc9288801"
+  },
+  {
+    "old_path": "ท้ายค่าย 1/zigzag",
+    "new_path": "build/training/camp-1/problems/zigzag",
+    "sha256": "23226773855a2acab9395ab185131c00b99fc6293b2e9cdc922804673033b300"
+  },
+  {
+    "old_path": "ท้ายค่าย 1/zigzag.cpp",
+    "new_path": "training/camp-1/problems/zigzag.cpp",
+    "sha256": "dd981b91100f9e15db6f29d18a9f469ef4c6299f657ac7f06892fe571a5afedb"
+  },
+  {
+    "old_path": "practice/Abacus.c",
+    "new_path": "practice/basics/abacus.c",
+    "sha256": "ac2c3135272f90d6c9b6fdccab6be5d0df4603d7dea0c47be5c144e396415fb0"
+  },
+  {
+    "old_path": "practice/c1_su67_signal_graph.cpp",
+    "new_path": "training/camp-1/problems/c1-su67-signal-graph.cpp",
+    "sha256": "ac37570cad9b1664fa38f110775ade15375c772fa02a7a300d1f236f407703d1"
+  },
+  {
+    "old_path": "practice/reverse_int.c",
+    "new_path": "practice/basics/reverse-int.c",
+    "sha256": "e228d5e1dd68377ac1d7cdafc4be2f0ff5a0549e67219ad538e1e950b5394e6a"
+  },
+  {
+    "old_path": "test_delete_executables.sh",
+    "new_path": "scripts/test_delete_executables.sh",
+    "sha256": "264f401c4dfbb8bf7d08f7f0220499ce1b4b39764cc5ed12fad67e429254a0fe",
+    "retired": true,
+    "reason": "Replaced by script/test_clean_build.py and portable script/clean_build.py at user request."
+  }
+]

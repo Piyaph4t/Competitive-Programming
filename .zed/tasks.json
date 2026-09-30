@@ -1,0 +1,46 @@
+[
+  {
+    "label": "Compile & Run C (Windows)",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "command": "$ErrorActionPreference = \"Stop\"; New-Item -ItemType Directory -Force \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR\" | Out-Null; gcc -std=c11 -DDEBUG -O2 \"$ZED_FILE\" -o \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM.exe\"; if ($LASTEXITCODE -eq 0) { & \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM.exe\" }; exit $LASTEXITCODE",
+    "shell": {
+      "program": "powershell"
+    }
+  },
+  {
+    "label": "Compile & Run C++ (Windows)",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "command": "$ErrorActionPreference = \"Stop\"; New-Item -ItemType Directory -Force \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR\" | Out-Null; g++ -std=c++17 -DDEBUG -O2 \"$ZED_FILE\" -o \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM.exe\"; if ($LASTEXITCODE -eq 0) { & \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM.exe\" }; exit $LASTEXITCODE",
+    "shell": {
+      "program": "powershell"
+    }
+  },
+  {
+    "label": "Compile & Run C (Linux)",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "command": "mkdir -p \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR\" && gcc -std=c11 -DDEBUG -O2 \"$ZED_FILE\" -o \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM\" && \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM\"",
+    "shell": {
+      "program": "bash"
+    }
+  },
+  {
+    "label": "Compile & Run C++ (Linux)",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "command": "mkdir -p \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR\" && g++ -std=c++17 -DDEBUG -O2 \"$ZED_FILE\" -o \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM\" && \"$ZED_WORKTREE_ROOT/build/$ZED_RELATIVE_DIR/$ZED_STEM\"",
+    "shell": {
+      "program": "bash"
+    }
+  }
+]
