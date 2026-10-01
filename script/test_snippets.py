@@ -32,7 +32,7 @@ class SnippetCompilationTests(unittest.TestCase):
         self.assertTrue(path.is_file(), 'Shared snippet source is not implemented')
         return json.loads(path.read_text(encoding='utf-8'))
 
-    def compile_and_run(self, source, language):
+    def compile_and_run(self, source, language, input_text=''):
         compiler, standard = ('gcc', 'c11') if language == 'c' else ('g++', 'c++17')
         if not shutil.which(compiler):
             self.skipTest(f'{compiler} unavailable')
@@ -44,7 +44,7 @@ class SnippetCompilationTests(unittest.TestCase):
             build = subprocess.run([compiler, '-std=' + standard, str(path), '-o', str(binary)],
                                    capture_output=True, text=True, timeout=30)
             self.assertEqual(build.returncode, 0, build.stderr)
-            run = subprocess.run([str(binary)], capture_output=True, text=True, timeout=5)
+            run = subprocess.run([str(binary)], input=input_text, capture_output=True, text=True, timeout=5)
             self.assertEqual(run.returncode, 0, run.stderr)
             return run.stdout
 
@@ -55,6 +55,30 @@ class SnippetCompilationTests(unittest.TestCase):
     def test_cpp_main_compiles_and_exits_successfully(self):
         code = expand(self.snippets('cpp')['CP: Main']['body'])
         self.assertEqual(self.compile_and_run(code, 'cpp'), '')
+
+    def test_cpp_template_shorthands_work_in_solution(self):
+        snippets = self.snippets('cpp')
+        self.assertIn('CP: Template', snippets)
+        solution = '''vi a = {3, 1, 2};
+    a.pb(4);
+    sort(all(a));
+    cout << a.front() << ' ';
+    sort(rall(a));
+    ll best = 10;
+    cout << chmin(best, 5LL) << ' ' << chmin(best, 7LL) << ' ';
+    cout << chmax(best, 8LL) << ' ' << chmax(best, 6LL) << ' ';
+    pii p = {a.front(), sz(a)};
+    vll big = {3000000000LL};
+    cout << p.first << ' ' << p.second << ' ' << best << ' ' << big[0] << '\\n';'''
+        code = expand(snippets['CP: Template']['body'], {1: solution})
+        self.assertEqual(self.compile_and_run(code, 'cpp'), '1 1 0 1 0 4 4 8 3000000000\n')
+
+    def test_cpp_template_test_cases_read_count_and_process_each_case(self):
+        snippets = self.snippets('cpp')
+        self.assertIn('CP: Template Test Cases', snippets)
+        code = expand(snippets['CP: Template Test Cases']['body'],
+                      {1: "ll x; cin >> x; cout << x * 2 << '\\n';"})
+        self.assertEqual(self.compile_and_run(code, 'cpp', '3\n2\n5\n9\n'), '4\n10\n18\n')
 
     def test_c_loop_links_index_and_runs_three_iterations(self):
         loop = expand(self.snippets('c')['CP: For Loop']['body'], {0: 'total += 1;'})

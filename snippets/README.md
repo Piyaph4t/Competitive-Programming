@@ -6,8 +6,28 @@ Edit [c.json](c.json) or [cpp.json](cpp.json) here, then rerun the Python instal
 | --- | --- |
 | `cp-main` | C11 or C++17 program starter; C++ includes fast iostream setup |
 | `cp-for` | Counted loop with an editable index and upper bound |
+| `cp-template` | C++17 single-case starter with `solve()`, fast I/O, and shorthand helpers |
+| `cp-template-tests` | Same C++17 starter, reading a test count and calling `solve()` for each case |
 
 Type the prefix in a C or C++ file and select the snippet from completion suggestions, or use the editor's snippet picker. Tab moves between numbered placeholders; repeated `$1` positions edit together; `$0` marks the final cursor position.
+
+## C++ CP templates
+
+Expand `cp-template` in an empty `.cpp` file for a single-case problem, or `cp-template-tests` when the first input value is the number of test cases. The first placeholder puts you inside `solve()`; Tab moves to the final cursor position after `main()`. Keep per-case variables inside `solve()` so each test case starts fresh.
+
+| Shorthand | Meaning / example |
+| --- | --- |
+| `ll` | `long long` |
+| `pii` | `pair<int, int>` |
+| `vi`, `vll` | `vector<int>`, `vector<ll>` |
+| `all(v)` | Forward iterator range: `sort(all(v))` |
+| `rall(v)` | Reverse iterator range: `sort(rall(v))` for descending order |
+| `v.pb(x)` | `v.push_back(x)` |
+| `sz(v)` | Container size converted to `int` |
+| `chmin(a, b)` | Replace `a` with `b` if smaller; return whether it changed |
+| `chmax(a, b)` | Replace `a` with `b` if larger; return whether it changed |
+
+Use matching types for `chmin` and `chmax`, such as `chmin(best, 5LL)` when `best` is `ll`. Pass an existing container to `all`/`rall`; these macros evaluate their argument twice. The templates use standard C++17 headers and `using namespace std;`.
 
 ## Install
 
@@ -55,6 +75,14 @@ python -c "import shutil; shutil.copyfile('path/to/c.json.unique-id.bak', 'path/
 Replacement is atomic per file. If an operating-system write error occurs partway through installation, earlier files may already be installed; use the printed backups to restore those files or rerun after fixing the error.
 
 ## Add a snippet
+
+To generate an entry from a raw source file, use [the source-to-snippet CLI](../script/README.md#create-a-snippet-from-source):
+
+```bash
+python3 script/create_snippet.py templates/example.cpp --output snippets/cpp.json --name "CP: Example" --prefix cp-example
+```
+
+Rerun to update the named entry. Add `--placeholders` if your source already includes snippet tab stops.
 
 Add a named `CP: ...` entry with a single string `prefix`, string or string-list `body`, and string `description`. Keep the repository files strict JSON. Use shared numbered placeholders such as `${1:i}`, `$1`, and `$0`; avoid editor-specific variables and transforms. Ordinary reusable algorithm code belongs in [templates/](../templates/README.md).
 
